@@ -3,33 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adriano Vergaray</title>
+    <title>Adriano Vergaray - Portafolio Académico</title>
     <style>
-        body {
-            background-color: #e6f2ff; /* El azul leve 🩵 */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+        * {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #e6f2ff; /* Tu azul leve de siempre 🩵 */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #333333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
         }
         h1 {
-            color: #0056b3; /* Un azul más oscuro para que resalte */
+            color: #0056b3;
             font-size: 2.5rem;
             margin-bottom: 10px;
         }
-        p {
+        .subtitle {
             font-size: 1.2rem;
+            color: #555;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #e6f2ff;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+        p {
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #0056b3;
+        }
+        .teacher-name {
+            font-size: 1.1rem;
+            color: #111;
+            font-weight: 600;
+        }
+        .teacher-bio {
+            font-size: 0.95rem;
+            color: #666;
+            margin-top: 4px;
+            font-style: italic;
+        }
+        .profile-links {
+            margin-top: 15px;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #003d82;
+        }
+        .grid-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .link-box {
+            background: #f0f7ff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #d0e4ff;
         }
     </style>
 </head>
 <body>
 
-    <h1>Hola, soy Adriano Vergaray</h1>
-    <p>y esta es mi primera página</p>
+    <div class="container">
+        
+        <header>
+            <h1>Adriano Mateo Vergaray Fernandez</h1>
+            <p class="subtitle">Estudiante de Ciencia de la Computación | Universidad Católica San Pablo</p>
+            <div class="profile-links">
+                👉 <a href="Pega_aquí_tu_LinkedIn" target="_blank">Mi Perfil de LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- 1. DESCRIPCIÓN PERSONAL -->
+        <section class="card">
+            <h2>Descripción Personal</h2>
+            <p>
+                Soy un estudiante de primer año de ciencia de la computacion apasionado por aprender y mejorar cada dia .
+            </p>
+        </section>
+
+        <!-- 2. CURSOS Y PROFESORES -->
+        <section class="card">
+            <h2>Cursos de la Carrera y Profesores</h2>
+            <ul>
+                <li>
+                    <div class="teacher-name">Lógica</div>
+                    <div class="teacher-bio">Dra. Yahaira Byrne Rivera &mdash; Licenciada en Nutrición Humana (UNSA), Segunda Especialidad en Docencia Universitaria Católica (UCSP), Bachiller en Psicología (UCSP). Máster en Filosofía Cristiana (UCAM, España) y Doctoranda en Psicología.</div>
+                </li>
+                
+                <li>
+                    <div class="teacher-name">Comunicación</div>
+                    <div class="teacher-bio">Dr. Angel Rodríguez Cruz &mdash; Doctor en Educación, Licenciado en Educación con Maestría en Administración de la Educación, especialista en Lengua y Literatura, con dominio de TIC. Asesor Didáctico Curricular y Examinador Internacional del Programa de Diploma del Bachillerato Internacional en Lengua A.</div>
+                    <div style="margin-top: 5px;">
+                        🔗 <a href="https://pe.linkedin.com/in/angel-rodriguez-cruz-58b78b85" target="_blank">LinkedIn del Profesor</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="teacher-name">Introducción a la Vida Universitaria</div>
+                    <div class="teacher-bio">Prof. Pierina Pacheco Leyton</div>
+                </li>
+
+                <li>
+                    <div class="teacher-name">Fundamentos Matemáticos para la Computación</div>
+                    <div class="teacher-bio">Prof. Sabrina Suárez &mdash; Docente a cargo de la asignatura de Fundamentos Matemáticos para Computación.</div>
+                </li>
+
+                <li>
+                    <div class="teacher-name">Introducción a la Computación</div>
+                    <div class="teacher-bio">Distinguished Speaker of the Association of Computing Machinery (ACM). Former Member of the BOG/IEEE-CS (2020-2023). Former Member of the Steering Committee of the ACM/IEEE-CS Computing Curricula CC2020.</div>
+                </li>
+
+                <li>
+                    <div class="teacher-name">Fundamentos para la Programación</div>
+                    <div class="teacher-bio">Mg. Kelly Vizconde La Motta &mdash; Magíster en Ciencia de la Computación, estudiante de maestría en Ciencia de Datos y estudios doctorales en Inteligencia Artificial. Directora de Kids & Code.</div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- LINKS DE PROFESORES LINKEDIN -->
+        <section class="card">
+            <h2>Links de Profesores LinkedIn</h2>
+            <p>Accede a las redes profesionales del equipo de docentes de la facultad:</p>
+            <ul>
+                <li>💼 <a href="https://pe.linkedin.com/in/gabriela-ponce-reinoso-885922127" target="_blank">Dra. Gabriela Ponce Reinoso — Red Profesional</a></li>
+                <li>💼 <a href="https://pe.linkedin.com/in/angel-rodriguez-cruz-58b78b85" target="_blank">Dr. Angel Rodríguez Cruz — Perfil Académico</a></li>
+                <li>💼 <a href="https://pe.linkedin.com/in/julissa-villanueva-llerena" target="_blank">Mg. Julissa Villanueva Llerena — Enlace Institucional</a></li>
+                <li>💼 <a href="https://pe.linkedin.com/in/luis-fernando-d%C3%ADaz-basurco-48098333" target="_blank">Dr. Luis Fernando Díaz Basurco — Red de Investigación</a></li>
+                <li>💼 <a href="https://pe.linkedin.com/in/rosmery-violeta-quispe-zavala-58374638" target="_blank">Dra. Rosmery Violeta Quispe Zavala — Consultoría y Docencia</a></li>
+            </ul>
+        </section>
+
+        <!-- 3. COMPAÑEROS DE CARRERA -->
+        <section class="card">
+            <h2>Páginas de Compañeros</h2>
+            <p>Visita los sitios web de mis compañeros de la universidad:</p>
+            <div class="grid-links">
+                <div class="link-box">
+                    <strong>Huanca Juárez</strong><br>
+                    <a href="https://kroos588.github.io/Huanca-Juarez/" target="_blank">Ver Sitio Web</a>
+                </div>
+                <div class="link-box">
+                    <strong>[Nombre Compañero 2]</strong><br>
+                    <a href="Pega_aquí_el_link" target="_blank">Ver Sitio Web</a>
+                </div>
+                <div class="link-box">
+                    <strong>[Nombre Compañero 3]</strong><br>
+                    <a href="Pega_aquí_el_link" target="_blank">Ver Sitio Web</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
 
 </body>
 </html>
