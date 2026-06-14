@@ -57,7 +57,7 @@
             list-style: none;
         }
         li {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
             padding-left: 15px;
             border-left: 3px solid #0056b3;
         }
@@ -85,6 +85,15 @@
             text-decoration: underline;
             color: #003d82;
         }
+        .cv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        .cv-grid .card {
+            margin-bottom: 0;
+        }
         .grid-links {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -97,6 +106,16 @@
             border-radius: 8px;
             text-align: center;
             border: 1px solid #d0e4ff;
+        }
+        .skill-tag {
+            display: inline-block;
+            background: #e6f2ff;
+            color: #0056b3;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin: 4px;
         }
     </style>
 </head>
@@ -112,13 +131,53 @@
             </div>
         </header>
 
-        <!-- 1. DESCRIPCIÓN PERSONAL -->
+        <!-- 1. PERFIL PROFESIONAL -->
         <section class="card">
-            <h2>Descripción Personal</h2>
+            <h2>Perfil Profesional</h2>
             <p>
-                Tengo 17 años y soy estudiante en la Universidad Católica San Pablo, cursando el primer año en el primer semestre de la carrera de Ciencia de la Computación. Me apasiona la tecnología y estoy enfocado en aprender y mejorar cada día en el desarrollo de software y la programación.
+                Soy Adriano Mateo Vergaray Fernandez, estudiante de 17 años en la Universidad Católica San Pablo, cursando el primer año (primer semestre) de la carrera de Ciencia de la Computación. Apasionado por la tecnología y enfocado en desarrollar bases sólidas en el diseño de software. Me caracterizo por mi disciplina, mentalidad cooperativa y constancia orientada al logro de objetivos tanto académicos como personales, buscando aplicar mis competencias lógicas en la resolución de problemas de alto impacto tecnológico.
             </p>
         </section>
+
+        <!-- SECCIÓN DOBLE COLUMNA: HABILIDADES Y LOGROS -->
+        <div class="cv-grid">
+            <!-- COLUMNA HABILIDADES -->
+            <section class="card">
+                <h2>Habilidades y Competencias</h2>
+                <p><strong>Habilidades Técnicas:</strong></p>
+                <div style="margin-bottom: 15px;">
+                    <span class="skill-tag">Python (Básico)</span>
+                    <span class="skill-tag">HTML (Básico)</span>
+                    <span class="skill-tag">Git y GitHub (Básico)</span>
+                </div>
+                <p><strong>Idiomas:</strong></p>
+                <div style="margin-bottom: 15px;">
+                    <span class="skill-tag">Inglés (Intermedio)</span>
+                </div>
+                <p><strong>Habilidades Blandas:</strong></p>
+                <div>
+                    <span class="skill-tag">Cooperativo</span>
+                    <span class="skill-tag">Trabajo en Equipo</span>
+                    <span class="skill-tag">Disciplina y Enfoque</span>
+                    <span class="skill-tag">Pensamiento Lógico</span>
+                </div>
+            </section>
+
+            <!-- COLUMNA EXTRAACADÉMICA -->
+            <section class="card">
+                <h2>Actividades y Logros Personales</h2>
+                <ul>
+                    <li>
+                        <strong>Disciplinas Deportivas:</strong>
+                        <div style="font-size: 0.95rem; color: #555;">2 años de constancia en Atletismo y 1 año de práctica continua en Deportes de Contacto, fortaleciendo la constancia y la autogestión.</div>
+                    </li>
+                    <li>
+                        <strong>Formación Musical:</strong>
+                        <div style="font-size: 0.95rem; color: #555;">3 años de práctica en instrumentos de cuerda (Mandolina y Ukelele), desarrollando paciencia, creatividad y coordinación técnica.</div>
+                    </li>
+                </ul>
+            </section>
+        </div>
 
         <!-- 2. CURSOS Y PROFESORES -->
         <section class="card">
@@ -131,7 +190,7 @@
                 
                 <li>
                     <div class="teacher-name">Comunicación</div>
-                    <div class="teacher-bio">Dr. Angel Rodríguez Cruz &mdash; Doctor en Educación, Licenciado en Educación con Maestría en Administración de la Educación, especialista en Lengua y Literatura, con dominio de TIC. Asesor Didáctico Curricular y Examinador Internacional del Programa de Diploma del Bachillerato Internacional en Lengua A.</div>
+                    <div class="teacher-bio">Dr. Angel Rodríguez Cruz &mdash; Doctor en Educación, Licenciado en Educación con Maestría en Administración de la Educación, especialista en Lengua y Literatura, con dominio de TIC.</div>
                     <div style="margin-top: 5px;">
                         🔗 <a href="https://pe.linkedin.com/in/angel-rodriguez-cruz-58b78b85" target="_blank">LinkedIn del Profesor</a>
                     </div>
@@ -149,12 +208,12 @@
 
                 <li>
                     <div class="teacher-name">Introducción a la Computación</div>
-                    <div class="teacher-bio">Distinguished Speaker of the Association of Computing Machinery (ACM). Former Member of the BOG/IEEE-CS (2020-2023). Former Member of the Steering Committee of the ACM/IEEE-CS Computing Curricula CC2020.</div>
+                    <div class="teacher-bio">Distinguished Speaker of the Association of Computing Machinery (ACM). Former Member of the BOG/IEEE-CS (2020-2023).</div>
                 </li>
 
                 <li>
                     <div class="teacher-name">Fundamentos para la Programación</div>
-                    <div class="teacher-bio">Mg. Kelly Vizconde La Motta &mdash; Magíster en Ciencia de la Computación, estudiante de maestría en Ciencia de Datos y estudios doctorales en Inteligencia Artificial. Directora de Kids & Code.</div>
+                    <div class="teacher-bio">Mg. Kelly Vizconde La Motta &mdash; Magíster en Ciencia de la Computación, Directora de Kids & Code.</div>
                 </li>
             </ul>
         </section>
@@ -162,7 +221,6 @@
         <!-- LINKS DE PROFESORES LINKEDIN -->
         <section class="card">
             <h2>Links de Profesores LinkedIn</h2>
-            <p>Accede a las redes profesionales del equipo de docentes de la facultad:</p>
             <ul>
                 <li>💼 <a href="https://pe.linkedin.com/in/gabriela-ponce-reinoso-885922127" target="_blank">Dra. Gabriela Ponce Reinoso — Red Profesional</a></li>
                 <li>💼 <a href="https://pe.linkedin.com/in/angel-rodriguez-cruz-58b78b85" target="_blank">Dr. Angel Rodríguez Cruz — Perfil Académico</a></li>
